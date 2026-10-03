@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JARVIS CF Privacy Policy</title>
+<style>
+:root{--bg:#fbfbfa;--fg:#1f2328;--muted:#5b6470;--line:#e3e5e8;--accent:#1f6feb}
+@media (prefers-color-scheme:dark){:root{--bg:#111418;--fg:#e6e8eb;--muted:#9aa4b0;--line:#2a3038;--accent:#58a6ff}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 system-ui,-apple-system,"Segoe UI","Hiragino Sans","Yu Gothic",sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 16px 64px}
+h1{font-size:1.6rem;margin:0 0 4px}h2{font-size:1.1rem;margin:28px 0 8px;border-bottom:1px solid var(--line);padding-bottom:4px}
+.muted{color:var(--muted);font-size:.92rem}a{color:var(--accent)}ul{padding-left:1.2em}
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy Policy / プライバシーポリシー</h1>
+<p class="muted">JARVIS CF (JARVIS Content Factory) — Last updated / 最終更新: 2026-09-30 — <a href="index.html">Home</a></p>
+
+<h2>1. Who uses this app</h2>
+<p>JARVIS CF is a personal desktop tool used only by its owner to analyze the owner's own social media accounts. It is not offered to the public.</p>
+
+<h2>2. Data we access</h2>
+<ul>
+<li><strong>TikTok</strong> (only after the owner authorizes via TikTok Login Kit): basic profile info from <code>user.info.basic</code> (open ID, display name, avatar), and the owner's public video list and metadata from <code>video.list</code> (video ID, title/description, creation time, duration, share URL, and view, like, comment and share counts).</li>
+<li><strong>YouTube / Instagram</strong>: the owner's own post list and post statistics through the official APIs, after the owner's authorization.</li>
+</ul>
+<p>We do not access other users' private data, direct messages, contacts, or payment information.</p>
+
+<h2>3. How data is used</h2>
+<p>Only to show the owner how their own posts perform over time and to suggest improvements for future posts (for example which topics or video lengths work better).</p>
+
+<h2>4. Storage and security</h2>
+<ul>
+<li>All data is stored locally on the owner's Windows PC (a local SQLite database). There is no server that collects it.</li>
+<li>Access tokens and app credentials are stored in a local folder outside the project and are never written to logs.</li>
+<li>Data is not sold, rented, or shared with third parties, and is not used for advertising.</li>
+</ul>
+
+<h2>5. Retention and deletion</h2>
+<p>Data is kept on the owner's PC until the owner deletes it. The owner can revoke access at any time in TikTok (Settings and privacy &gt; Security &gt; Apps and services permissions) and in the Google / Meta account settings, and can delete the local database and token files.</p>
+
+<h2>6. Changes and contact</h2>
+<p>Updates will be posted on this page. Contact: <a id="contact" href="#">GitHub Issues of this site</a>.</p>
+
+<h2>日本語</h2>
+<ul>
+<li><strong>利用者</strong>: 本ツールは運営者本人が自分のSNSアカウントの分析にだけ使う個人用ツールで、一般には提供していません。</li>
+<li><strong>取得する情報</strong>: 本人が許可した場合のみ、TikTok の <code>user.info.basic</code>（open ID・表示名・アイコン）と <code>video.list</code>（本人の公開動画のID・タイトル/説明・投稿日時・長さ・共有URL・再生/いいね/コメント/シェア数）、YouTube・Instagram の本人の投稿一覧と実績を公式APIで取得します。他人の非公開情報・DM・連絡先・決済情報は取得しません。</li>
+<li><strong>利用目的</strong>: 本人の投稿の成績の推移を確認し、次の投稿の改善に使うためだけに利用します。</li>
+<li><strong>保存と安全管理</strong>: データは本人のPC内（ローカルのSQLite）にのみ保存し、収集用のサーバーはありません。アクセストークンやアプリの認証情報はプロジェクト外のフォルダに保存し、ログには出力しません。販売・第三者提供・広告利用はしません。</li>
+<li><strong>保存期間と削除</strong>: 本人が削除するまでPC内に保存します。TikTok（設定とプライバシー &gt; セキュリティ &gt; アプリとサービスの権限）や Google / Meta のアカウント設定からいつでも連携を解除でき、PC内のデータとトークンも削除できます。</li>
+<li><strong>変更・お問い合わせ</strong>: 変更はこのページで告知します。お問い合わせはこのサイトの GitHub Issues へ。</li>
+</ul>
+</main>
+<script>
+(function(){var h=location.hostname,p=location.pathname.split('/').filter(function(s){return s&&s.indexOf('.')<0;});
+if(/\.github\.io$/.test(h)){var u=h.split('.')[0],r=p.length?p[0]:h;document.getElementById('contact').href='https://github.com/'+u+'/'+r+'/issues';}})();
+</script>
+</body>
+</html>

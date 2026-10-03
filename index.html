@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JARVIS CF</title>
+<meta name="description" content="JARVIS CF (JARVIS Content Factory) - a personal desktop tool that reads the owner's own social media post statistics for self-analysis.">
+<style>
+:root{--bg:#fbfbfa;--fg:#1f2328;--muted:#5b6470;--line:#e3e5e8;--accent:#1f6feb}
+@media (prefers-color-scheme:dark){:root{--bg:#111418;--fg:#e6e8eb;--muted:#9aa4b0;--line:#2a3038;--accent:#58a6ff}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 system-ui,-apple-system,"Segoe UI","Hiragino Sans","Yu Gothic",sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 16px 64px}
+h1{font-size:1.8rem;margin:0 0 4px}h2{font-size:1.15rem;margin:32px 0 8px;border-bottom:1px solid var(--line);padding-bottom:4px}
+p,li{color:var(--fg)}.muted{color:var(--muted);font-size:.92rem}a{color:var(--accent)}
+nav a{margin-right:16px}ul{padding-left:1.2em}
+</style>
+</head>
+<body>
+<main>
+<h1>JARVIS CF</h1>
+<p class="muted">JARVIS Content Factory — personal desktop tool / 個人用デスクトップツール</p>
+<nav><a href="terms.html">Terms of Service / 利用規約</a><a href="privacy.html">Privacy Policy / プライバシーポリシー</a></nav>
+
+<h2>What it is</h2>
+<p>JARVIS CF is a Windows desktop tool run by its owner on their own PC. With the owner's explicit authorization, it reads the owner's <strong>own</strong> public post list and post statistics (for example views, likes, comments and shares) from TikTok, YouTube and Instagram, and stores them locally to compare results and plan better content.</p>
+<ul>
+<li>It is used only by its owner for their own accounts. It is not offered to other users.</li>
+<li>TikTok: it uses Login Kit for Desktop and reads data with the <code>user.info.basic</code> and <code>video.list</code> scopes only.</li>
+<li>It does not post, edit or delete anything on TikTok. Nothing is published without the owner's manual approval.</li>
+<li>Data is stored only on the owner's PC and is never sold or shared.</li>
+</ul>
+
+<h2>概要</h2>
+<p>JARVIS CF は、運営者本人が自分のPCで使うWindows用の個人ツールです。本人が明示的に許可した場合に限り、TikTok・YouTube・Instagram から<strong>本人のアカウント</strong>の公開投稿一覧と実績（再生数・いいね・コメント・シェア等）を読み取り、PC内に保存して投稿の改善に使います。</p>
+<ul>
+<li>運営者本人のアカウント専用です。他の利用者には提供していません。</li>
+<li>TikTok では Login Kit（デスクトップ）を使い、<code>user.info.basic</code> と <code>video.list</code> の読み取り権限だけを使用します。</li>
+<li>TikTok への投稿・編集・削除は行いません。本人の承認なしに外部公開することはありません。</li>
+<li>データは本人のPC内にのみ保存し、販売・第三者提供はしません。</li>
+</ul>
+
+<h2>Contact / お問い合わせ</h2>
+<p><a id="contact" href="#">GitHub Issues of this site / このサイトのGitHub Issues</a></p>
+<p class="muted">Last updated / 最終更新: 2026-09-30</p>
+</main>
+<script>
+// github.io の場合、公開元リポジトリの Issues へリンク（個人の連絡先は載せない）
+(function(){var h=location.hostname,p=location.pathname.split('/').filter(function(s){return s&&s.indexOf('.')<0;});
+if(/\.github\.io$/.test(h)){var u=h.split('.')[0],r=p.length?p[0]:h;document.getElementById('contact').href='https://github.com/'+u+'/'+r+'/issues';}})();
+</script>
+</body>
+</html>
